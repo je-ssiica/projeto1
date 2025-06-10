@@ -18,9 +18,9 @@ Os dados do arquivo `projetos.csv` se referem aos valores futuros previstos para
 1) Nesta etapa, faça o carregamento dos dados e apresente a df completa. (Peso: 1,0)
 """
 
-!pip install matplotlib
 
-import pandas as pd
+
+
 import streamlit as st
 st.set_page_config(
     page_title="Meu primeiro projeto!",
@@ -80,7 +80,7 @@ for projeto in projetos:
 
 """5) Gere um gráfico de dispersão cruzando os dados do `Projeto1` e `Projeto2`, com marcadores verdes e em formato de estrela. (Peso: 2,0)"""
 
-import matplotlib.pyplot as plt
+
 fig, ax = plt.subplots()
 plt.scatter(df['Projeto1'], df['Projeto2'], color='green', marker='*', ax=ax)
 plt.xlabel('Projeto1')
@@ -100,8 +100,7 @@ Dicas:
   - `plt.show()`
 """
 
-import matplotlib.pyplot as plt
-import pandas as pd
+
 fig, ax = plt.subplots()
 
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
