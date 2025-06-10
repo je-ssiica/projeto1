@@ -28,7 +28,7 @@ st.set_page_config(
 
 st.header("Projeto inicial")
 
-
+import pandas as pd
 df = pd.read_csv("https://raw.githubusercontent.com/je-ssiica/projeto1/refs/heads/main/projetos.csv", sep=';')
 st.dataframe(df)
 
