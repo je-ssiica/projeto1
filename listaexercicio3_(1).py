@@ -108,11 +108,11 @@ st.dataframe(df)
 plt.figure(figsize=(10,6))
 for projeto in projetos:
 
-  plt.plot(df['Data'], df[projeto], label=projeto, ax=ax)
+ ax.plot(df['Data'], df[projeto], label=projeto, ax=ax)
 
-plt.xlabel('Ano/Mês')
-plt.ylabel('Valor Mensal')
-plt.title('A Evolução dos Valores dos Projetos ao Longo do Tempo')
-plt.legend()
-plt.grid(True)
+ax.xlabel('Ano/Mês')
+ax.ylabel('Valor Mensal')
+ax.title('A Evolução dos Valores dos Projetos ao Longo do Tempo')
+ax.legend()
+ax.grid(True)
 st.pyplot(fig)
