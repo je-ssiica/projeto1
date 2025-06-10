@@ -81,10 +81,7 @@ for projeto in projetos:
 
 import matplotlib.pyplot as plt 
 fig, ax = plt.subplots()
-plt.scatter(df['Projeto1'], df['Projeto2'], color='green', marker='*', ax=ax)
-plt.xlabel('Projeto1')
-plt.ylabel('Projeto2')
-plt.title('Gráfico de Dispersão')
+df.plot(df['Projeto1'], df['Projeto2'], color='green', marker='*', ax=ax)
 st.pyplot(fig)
 
 """6) Crie um gráfico de linha que mostre a evolução dos valores dos projetos ao longo do tempo. (Peso: 2,0)
