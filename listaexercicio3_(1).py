@@ -29,8 +29,7 @@ st.set_page_config(
 st.header("Projeto inicial")
 
 
-arquivo = ("/content/projetos.csv")
-df = pd.read_csv(arquivo, sep=';')
+df = pd.read_csv("https://raw.githubusercontent.com/je-ssiica/projeto1/refs/heads/main/projetos.csv", sep=';')
 st.dataframe(df)
 
 """2) Atualize a DataFrame criado no Exe1, adicionando mais uma linha ao final com os dados referentes ao mês de dezembro de 2026. Depois apresente as últimas linhas da df para checar se ocorreu como deveria. (Peso: 2,0)
