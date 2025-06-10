@@ -108,7 +108,7 @@ st.dataframe(df)
 # ax.figure()
 for projeto in projetos:
 
- ax.plot(df['Data'], df[projeto], label=projeto, ax=ax)
+ ax.plot(df['Data'], df[projeto], label=projeto)
 
 ax.set_xlabel('Ano/Mês')
 ax.set_ylabel('Valor Mensal')
