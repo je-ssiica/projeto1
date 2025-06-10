@@ -105,7 +105,7 @@ df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 df = df.sort_values(by='Data')
 st.dataframe(df)
 
-ax.figure()
+# ax.figure()
 for projeto in projetos:
 
  ax.plot(df['Data'], df[projeto], label=projeto, ax=ax)
