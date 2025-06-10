@@ -97,7 +97,7 @@ Dicas:
 """
 
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10,6))
 
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 
@@ -105,7 +105,7 @@ df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 df = df.sort_values(by='Data')
 st.dataframe(df)
 
-plt.figure(figsize=(10,6))
+ax.figure(figsize=(10,6))
 for projeto in projetos:
 
  ax.plot(df['Data'], df[projeto], label=projeto, ax=ax)
