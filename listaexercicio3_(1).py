@@ -81,7 +81,7 @@ for projeto in projetos:
 
 import matplotlib.pyplot as plt 
 fig, ax = plt.subplots()
-df.plot(df['Projeto1'], df['Projeto2'], color='green', marker='*', ax=ax)
+df.plot(kind = 'scatter', x = 'Projeto1' , y = 'Projeto2', color='green', marker='*', ax=ax)
 st.pyplot(fig)
 
 """6) Crie um gráfico de linha que mostre a evolução dos valores dos projetos ao longo do tempo. (Peso: 2,0)
