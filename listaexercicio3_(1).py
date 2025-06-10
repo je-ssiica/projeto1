@@ -97,7 +97,7 @@ Dicas:
 """
 
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10,6))
 
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 
