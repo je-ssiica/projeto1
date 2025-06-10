@@ -110,9 +110,9 @@ for projeto in projetos:
 
  ax.plot(df['Data'], df[projeto], label=projeto, ax=ax)
 
-ax.xlabel('Ano/Mês')
-ax.ylabel('Valor Mensal')
-ax.title('A Evolução dos Valores dos Projetos ao Longo do Tempo')
+ax.set_xlabel('Ano/Mês')
+ax.set_ylabel('Valor Mensal')
+ax.set_title('A Evolução dos Valores dos Projetos ao Longo do Tempo')
 ax.legend()
 ax.grid(True)
 st.pyplot(fig)
